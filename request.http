@@ -1,0 +1,30 @@
+//PRUEBAS QUE SE REALIZARON CON LA EXTENSION REST CLIENT DE VSCODE
+
+###
+GET http://localhost:80/api/materia HTTP/1.1
+
+
+
+###
+POST http://localhost:80/api/materia HTTP/1.1
+Content-Type: application/json
+
+{
+    "materia": "ciencias naturales",
+    "promedio": 9.78,
+    "semestre": "Noveno"
+}
+
+###
+PUT http://localhost:80/api/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Ignacio",
+    "apellidos": "Jiménez Hernández",
+    "matricula": "2023011095",
+    "carrera": "Lic. en Arquitectura"
+}
+
+###
+DELETE http://localhost:80/api/1 HTTP/1.1
